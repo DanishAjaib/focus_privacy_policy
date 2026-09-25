@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Focus for YouTube</title>
+<style>
+  body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  h1 {
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 18px;
+    margin-top: 36px;
+  }
+  code {
+    background: #f2f2f2;
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  ul {
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Focus for YouTube</h1>
+<div class="updated">Last updated: September 25, 2026</div>
+
+<p>This extension does not collect, sell, or transmit any personal data to its developer or to any third party. Everything it stores stays within Chrome's own storage system, under your control.</p>
+
+<h2>What this extension stores, and where</h2>
+
+<p><strong>Your settings</strong> (which distractions are hidden, thresholds, custom selector overrides) are stored using <code>chrome.storage.sync</code> — Chrome's built-in setting-sync mechanism, the same one Chrome uses to sync your bookmarks and preferences. This data is encrypted and synced by Google only across browsers where you are signed into the same Chrome/Google account. It is never sent to this extension's developer, and never to any server operated by this extension.</p>
+
+<p><strong>Your watch-time statistics</strong> (daily totals used to show your stats in the popup) are stored using <code>chrome.storage.local</code>, which stays only on the device it was recorded on. It is not synced, not backed up, and not transmitted anywhere. Uninstalling the extension deletes it permanently.</p>
+
+<p>Both kinds of data can be cleared at any time from the extension's popup ("Reset selector overrides", "Reset session"), and watch-time data is only ever written by you actively using YouTube — never collected passively or in the background when YouTube isn't open.</p>
+
+<h2>What this extension does not do</h2>
+
+<ul>
+  <li>No user accounts, sign-in, or identifiers of any kind</li>
+  <li>No advertising or ad networks</li>
+  <li>No analytics, telemetry, or crash reporting sent anywhere</li>
+  <li>No network requests made by the extension itself — the only outbound link is the "Support this extension" button in the popup, which opens PayPal's donation page in a new browser tab only if you click it</li>
+</ul>
+
+<h2>Permissions this extension requests, and why</h2>
+
+<ul>
+  <li><code>storage</code> — to save your settings (via Chrome sync) and watch-time stats (locally), as described above.</li>
+  <li><code>unlimitedStorage</code> — watch-time history accumulates indefinitely rather than being capped or auto-deleted, so this permission avoids ever hitting a storage quota. It does not grant access to anything beyond what's described above.</li>
+  <li>Access to <code>youtube.com</code> — required for the extension to run its content script, which hides selected page elements and reads the current video's page state (e.g. whether it's playing, its URL) to decide what to hide. This access is scoped only to youtube.com and is not used to read or transmit page content anywhere.</li>
+</ul>
+
+<h2>Changes to this policy</h2>
+
+<p>If this policy changes, the "Last updated" date above will change accordingly. Material changes (e.g. if the extension ever started collecting data it doesn't today) would be described here plainly, not buried.</p>
+
+<h2>Contact</h2>
+
+<p>Questions about this policy or the extension can be sent to [YOUR CONTACT EMAIL].</p>
+
+</body>
+</html>
